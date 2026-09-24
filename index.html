@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Noticias</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Noticias</h1>
+        <header>
+            <nav>
+                <span class="cat" onclick="buscar('TIC')">TIC</span>
+                <span class="cat" onclick="buscar('Deportes')">Deportes</span>
+                <span class="cat" onclick="buscar('Economía')">Economía</span>
+                <span class="cat" onclick="buscar('Salud')">Salud</span>
+                <span class="cat" onclick="buscar('Ciencia')">Ciencia</span>
+                <span class="cat" onclick="buscar('Cine')">Cine</span>
+                <span class="cat" onclick="buscar('Recientes')">Recientes</span>
+            </nav>
+            <div class="busqueda">
+                <input type="text" placeholder="Buscar">
+                <button onclick="buscarTema()">Buscar</button>
+                <button id="btnActualizar" onclick="actualizar()">Actualizar</button>
+            </div>
+        </header>
+
+        <div id="mensaje-estado"></div>
+        <div class="container-noticias"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
